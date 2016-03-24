@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.0.2] - 2016-03-24
+### Added
+- dotfile loading now works, and will create a default dotfile if missing.
+Default dotfile is currently stupid and useless, like the rest of nmi!
+
 ## [0.0.1] - 2016-03-24
 ### Added
 - Added in help text for usage. nmi doesn't follow those instructions yet, of
