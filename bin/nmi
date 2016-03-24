@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+var args = require('../lib/args');
+var Cache = require('../lib/cache');
+var Dotfile = require('../lib/dotfile');
+var install = require('../lib/install');
+var Tree = require('../lib/tree');
+
+var config = Dotfile.load();
+var cache = new Cache(config.cache);
+var tree = new Tree(cache);
+
+// Right now only supports installs
+install(args, tree);

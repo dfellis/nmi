@@ -1,0 +1,12 @@
+{
+    "name": "nmi",
+    "version": "0.0.0",
+    "description": "The Node Module Installer",
+    "license": "MIT",
+    "author": "David Ellis <d.f.ellis@ieee.org>",
+    "bin": "./bin/nmi",
+    "dependencies": {},
+    "devDependencies": {},
+    "scripts": {}
+}
+
