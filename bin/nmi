@@ -8,7 +8,12 @@ var Tree = require('../lib/tree');
 
 var config = Dotfile.load();
 var cache = new Cache(config.cache);
-var tree = new Tree(cache);
+var tree = new Tree(cache, process.cwd());
 
 // Right now only supports installs
-install(args, tree);
+if (args.install) {
+    install(args, tree);
+} else {
+    console.error('Only installs are supported at the moment');
+    process.exit(2);
+}

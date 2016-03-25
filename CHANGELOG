@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.0.4] - 2016-03-25
+### Added
+- Put an error message into nmi if you didn't tell it to install anything
+- Added more git helpers and made the method names less redundant
+- The cache object now does something useful!
+
 ## [0.0.3] - 2016-03-25
 ### Added
 - dotfile loading now builds a more useful default .nmirc file, also creates
