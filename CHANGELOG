@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.0.3] - 2016-03-25
+### Added
+- dotfile loading now builds a more useful default .nmirc file, also creates
+the .nmi and .nmi/cache directories
+- cache object slightly more useful
+- git_helpers now has two helpers! Not tested, yet.
+
 ## [0.0.2] - 2016-03-24
 ### Added
 - dotfile loading now works, and will create a default dotfile if missing.
