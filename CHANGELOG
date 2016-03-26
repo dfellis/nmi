@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.0.5] - 2016-03-25
+### Added
+- Added some more arguments that should be supported, and a warning on one
+that won't be supported immediately
+- Add in logic to the cache to get a module's package.json at the specified
+version
+- Began work on the dependency tree generation
+
 ## [0.0.4] - 2016-03-25
 ### Added
 - Put an error message into nmi if you didn't tell it to install anything
