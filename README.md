@@ -26,7 +26,8 @@ Haven't written any code, yet, so these are just plans. They will probably chang
 * Since we're using raw git repositories, we'll be enforcing some convention -- `package.json` in the root of the repo, `master` branch is master, the first commit with the desired `version` is that actual version (works for both "good" dev practice of new work in a feature branch and then only merge to master, as well as doing dev work on master and then bumping the version when you're done).
 * The ability to shrinkwrap your project is awesome, but `npm-shrinkwrap.json`, besides having npm in the name, has never been versioned well. Will need to think about how exactly we want to do this, so not in scope at first.
 * The ability to dedupe dependencies and flatten the dependency tree is also great, but has often been broken in npm itself, so want to make this a separate module that `nmi` simply uses.
-* Don't want to host `nmi` on `npm`, but that'll probably require me to write nasty things like `.deb`s and `.rpm`s and `.msi`s and whatever-the-fuck homebrew does.
+* Don't want to host `nmi` on `npm`, so the first thing to do is make `nmi` bootstrap itself; cloning this repo and running `./bin/nmi install -u` should Just Work (tm).
+* The next command to support after `install` will be `audit`. Node security warnings should be automatically accessible and it should be trivial to determine if your code fails a security audit (at least due to dependencies, clearly the code you write won't be automagically audited by this command).
 
 ## When?
 
