@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.0.7] - 2016-04-01
+### Added
+- ./bin/nmi install -u will now actually copy the nmi code (minus the .git
+directory) to ~/.nmi/builds/nmi
+- There is now a -f arg to force operations that will otherwise abort (trying
+to install -u a node module will fail if it's installed that way already)
+- dotfile.js now references a builds directory and adds it into the default
+config
+### Changed
+- README corrected about the existence of actual code
+- nmi is now consistently camelCase instead of mixed camelCase and snake_case
+
 ## [0.0.6] - 2016-03-28
 ### Added
 - Added new arguments and updated the README about the planned `audit`

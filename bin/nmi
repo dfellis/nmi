@@ -12,7 +12,7 @@ var tree = new Tree(cache, process.cwd());
 
 // Right now only supports installs
 if (args.install) {
-    install(args, tree);
+    install(args, tree, config.builds);
 } else {
     console.error('Only installs are supported at the moment');
     process.exit(2);

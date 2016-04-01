@@ -17,7 +17,7 @@ So, `nmi` won't have a central registry. It will also drop some other concepts f
 
 ## How?
 
-Haven't written any code, yet, so these are just plans. They will probably change somewhat when put into practice, but I don't think it'll drift too far from here:
+Here're the plans. They will probably change somewhat when put into practice, but I don't think it'll drift too far from here:
 
 * No central registry, instead packages will be referenced in the `package.json` in the form `"${user}/${module}": "1.2.3"` and the `${user}` and `${module}` pieces will be templated into an ordered list of git URL templates and the first one to match is used.
 * Simple binary search of git history for the appropriate `version` in the `package.json` shouldn't be too slow.
