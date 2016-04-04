@@ -1,6 +1,6 @@
 {
     "name": "nmi",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "The Node Module Installer",
     "license": "MIT",
     "author": "David Ellis <d.f.ellis@ieee.org>",
